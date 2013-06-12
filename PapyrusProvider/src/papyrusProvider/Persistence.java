@@ -14,7 +14,7 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import org.eclipse.lyo.oslc4j.core.exception.OslcCoreApplicationException;
 import org.eclipse.lyo.oslc4j.provider.jena.JenaModelHelper;
 
-import papyrusProvider.resourceaccess.Example;
+import papyrusProvider.resourceaccess.ResourceAccess;
 import papyrusProvider.servlet.Populate;
 import PapyrusCommon.PapyrusCommon.resources.Resource;
 
@@ -25,7 +25,7 @@ import com.hp.hpl.jena.util.FileUtils;
 
 public class Persistence {
 	private  static TreeMap<String, Resource> RESOURCE_MAP = new TreeMap<String, Resource>();
-	private  static Example retriver = new Example();
+	private  static ResourceAccess retriver = new ResourceAccess();
 	private static Populate populate;
 	private static String basePath;
 	private static URI serviceProviderURI;

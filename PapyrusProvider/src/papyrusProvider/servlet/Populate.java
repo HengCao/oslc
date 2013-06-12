@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 import org.eclipse.uml2.uml.internal.impl.ElementImpl;
 
 import papyrusProvider.Persistence;
-import papyrusProvider.Utilities;
+ 
 import PapyrusCommon.PapyrusCommon.resources.Resource;
 
 public final class Populate
@@ -61,7 +61,7 @@ public final class Populate
     private void persistPapyrusResource(final Resource resource)
             throws URISyntaxException
     {
-        final String identifier = Utilities.createResourceIdentifier(resource);
+        final String identifier = resource.getIdentifier();
 
         final URI about = new URI(basePath + "/papyrusresources/" + identifier);
 

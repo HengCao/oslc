@@ -36,7 +36,7 @@ import PapyrusCommon.PapyrusCommon.Constants;
 import PapyrusCommon.PapyrusCommon.resources.Resource;
 import papyrusProvider.Persistence;
 import papyrusProvider.Utilities;
-import papyrusProvider.resourceaccess.Example;
+import papyrusProvider.resourceaccess.ResourceAccess;
 import papyrusProvider.servlet.ServiceProviderSingleton;
 
 @OslcService(Constants.CHANGE_MANAGEMENT_DOMAIN)
@@ -122,7 +122,7 @@ public class PapyrusResource
                                            final Resource         resource)
            throws URISyntaxException
     {
-        final String identifier = Utilities.createResourceIdentifier(resource);
+        final String identifier =  resource.getIdentifier();
 
         final URI about = new URI(httpServletRequest.getScheme(),
                                   null,
