@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/HAW/Juno/eclipse/plugins/org.eclipse.uml2.uml_4.0.2.v20130114-0902.jar" sourcepath="E:/HAW/Juno/eclipse/plugins/org.eclipse.uml2.uml_4.0.2.v20130114-0902.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/uml2/uml/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/uml2/uml/internal/impl/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/uml2/uml/internal/operations/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/uml2/uml/internal/resource/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/uml2/uml/resource/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/uml2/uml/util/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/uml2/uml/validation/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/HAW/Juno/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.8.1.v20130125-0546.jar"/>
+	<classpathentry kind="lib" path="E:/HAW/Juno/eclipse/plugins/org.eclipse.uml2.types_1.0.0.v20130114-0902.jar"/>
+	<classpathentry kind="lib" path="E:/HAW/Juno/eclipse/plugins/org.eclipse.uml2.common_1.7.0.v20130114-0902.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
