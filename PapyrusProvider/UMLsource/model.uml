@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_y8B9sK-EEeK3w5F5XKu8Lg" name="Model">
+  <packageImport xmi:id="_y8B9sa-EEeK3w5F5XKu8Lg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_9Ts8IK-EEeK3w5F5XKu8Lg" name="TestDatenModell">
+    <packagedElement xmi:type="uml:Class" xmi:id="_O0XWgK-FEeK3w5F5XKu8Lg" name="Person">
+      <ownedAttribute xmi:id="_vveBcK-MEeK3w5F5XKu8Lg" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zLgw4K-UEeK3w5F5XKu8Lg" name="Name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tvfx8K-FEeK3w5F5XKu8Lg" name="Professional"/>
+  </packagedElement>
+  <profileApplication xmi:id="_UHvUoK-FEeK3w5F5XKu8Lg">
+    <eAnnotations xmi:id="_UIF58K-FEeK3w5F5XKu8Lg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="model.profile.uml#_vCaRsK-NEeK3w5F5XKu8Lg"/>
+    </eAnnotations>
+    <appliedProfile href="model.profile.uml#_bDtuQK9DEeK3w5F5XKu8Lg"/>
+  </profileApplication>
+</uml:Model>
