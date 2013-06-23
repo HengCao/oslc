@@ -32,7 +32,7 @@ import org.eclipse.lyo.oslc4j.provider.json4j.Json4JProvidersRegistry;
  
 
 
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 import PapyrusCommon.PapyrusCommon.resources.Resource;
  
 
@@ -48,7 +48,7 @@ public final class Oslc4JPapyrusApplication
         RESOURCE_CLASSES.addAll(Json4JProvidersRegistry.getProviders());
         RESOURCE_CLASSES.add(PapyrusResource.class);
 
-        RESOURCE_SHAPE_PATH_TO_RESOURCE_CLASS_MAP.put( Constants.PATH_RESOURCE, Resource.class);
+        RESOURCE_SHAPE_PATH_TO_RESOURCE_CLASS_MAP.put( PConstants.PATH_RESOURCE, Resource.class);
     }
 
     public Oslc4JPapyrusApplication()

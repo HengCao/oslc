@@ -32,14 +32,12 @@ import org.eclipse.lyo.oslc4j.core.annotation.OslcService;
 import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.OslcMediaType;
 
-import PapyrusCommon.PapyrusCommon.Constants;
-import PapyrusCommon.PapyrusCommon.resources.Resource;
 import papyrusProvider.Persistence;
-import papyrusProvider.Utilities;
-import papyrusProvider.resourceaccess.ResourceAccess;
 import papyrusProvider.servlet.ServiceProviderSingleton;
+import PapyrusCommon.PapyrusCommon.PConstants;
+import PapyrusCommon.PapyrusCommon.resources.Resource;
 
-@OslcService(Constants.CHANGE_MANAGEMENT_DOMAIN)
+@OslcService(PConstants.CHANGE_MANAGEMENT_DOMAIN)
 @Path("papyrusresources")
 public class PapyrusResource
 {
@@ -57,15 +55,15 @@ public class PapyrusResource
          uri = "",
          hintWidth = "1000px",
          hintHeight = "600px",
-          resourceTypes = {Constants.TYPE_RESOURCE},
+          resourceTypes = {PConstants.TYPE_RESOURCE},
          usages = {OslcConstants.OSLC_USAGE_DEFAULT}
     )
     @OslcQueryCapability
     (
         title = "Resources Query Capability",
         label = "Resources Catalog Query",
-        resourceShape = OslcConstants.PATH_RESOURCE_SHAPES + "/" + Constants.PATH_RESOURCE,
-        resourceTypes = {Constants.TYPE_RESOURCE},
+        resourceShape = OslcConstants.PATH_RESOURCE_SHAPES + "/" + PConstants.PATH_RESOURCE,
+        resourceTypes = {PConstants.TYPE_RESOURCE},
         usages = {OslcConstants.OSLC_USAGE_DEFAULT}
     )
     @GET
@@ -111,8 +109,8 @@ public class PapyrusResource
     (
          title = "Papyrus Resource Creation Factory",
          label = "Papyrus Resource Creation",
-         resourceShapes = {OslcConstants.PATH_RESOURCE_SHAPES + "/" + Constants.PATH_RESOURCE},
-         resourceTypes = {Constants.TYPE_RESOURCE},
+         resourceShapes = {OslcConstants.PATH_RESOURCE_SHAPES + "/" + PConstants.PATH_RESOURCE},
+         resourceTypes = {PConstants.TYPE_RESOURCE},
          usages = {OslcConstants.OSLC_USAGE_DEFAULT}
     )
     @POST

@@ -28,7 +28,7 @@ import org.eclipse.lyo.oslc4j.core.model.PrefixDefinition;
 import org.eclipse.lyo.oslc4j.core.model.Publisher;
 import org.eclipse.lyo.oslc4j.core.model.ServiceProvider;
 
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
  
 
 import papyrusProvider.resources.PapyrusResource;
@@ -62,8 +62,8 @@ class ServiceProviderFactory
             new PrefixDefinition(OslcConstants.OSLC_CORE_NAMESPACE_PREFIX, new URI(OslcConstants.OSLC_CORE_NAMESPACE)),
             new PrefixDefinition(OslcConstants.RDF_NAMESPACE_PREFIX,       new URI(OslcConstants.RDF_NAMESPACE)),
             new PrefixDefinition(OslcConstants.RDFS_NAMESPACE_PREFIX,      new URI(OslcConstants.RDFS_NAMESPACE)),
-            new PrefixDefinition(Constants.CHANGE_MANAGEMENT_PREFIX,   new URI(Constants.CHANGE_MANAGEMENT_NAMESPACE)),
-            new PrefixDefinition(Constants.PAPYRUS_NAMESPACE_PREFIX,   new URI(Constants.PAPYRUS_NAMESPACE)),
+            new PrefixDefinition(PConstants.CHANGE_MANAGEMENT_PREFIX,   new URI(PConstants.CHANGE_MANAGEMENT_NAMESPACE)),
+            new PrefixDefinition(PConstants.PAPYRUS_NAMESPACE_PREFIX,   new URI(PConstants.PAPYRUS_NAMESPACE)),
         };
 
         serviceProvider.setPrefixDefinitions(prefixDefinitions);
