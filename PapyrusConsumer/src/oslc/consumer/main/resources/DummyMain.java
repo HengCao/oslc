@@ -36,10 +36,8 @@ public abstract class DummyMain {
 	 */
 	private static final int MAXLINECOUNT = 15;
 
-	/**
-	 * Temporary directory data retrieved will be stored at.
-	 */
-	private static final String TEMP_COMSUMER_OUTPUT_DIR = "E:\\HAW\\rhapsody_integration_example\\dummy";
+ 
+	 
 
 	private static void updateDiagramm(Resource[] resource, Retriever retriever) {
 
@@ -61,17 +59,19 @@ public abstract class DummyMain {
 
 					System.out.println("Diagramm set");
 				}
+				else
+				{
+					System.err.println("NO such Diagramm");
+				}
 			}
 			re.addTasks(URI.create("http://taskprovider/task1"));
 
-			// stockquote.setChangePrice(changepreis);
-			//
+			 
 			ClientResponse response = retriever.updateSystemDefinition(re);
-			// System.out.println("Update Response for " +
-			// stockquote.getAbout());
+			 
 			System.out.print("STATUS: " + response.getStatusCode());
 			System.out.println(" - " + response.getMessage());
-			// System.out.println("== ******************************************************* ==");
+			 
 		}
 
 	}

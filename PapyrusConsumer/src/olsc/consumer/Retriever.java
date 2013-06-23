@@ -30,7 +30,7 @@ import org.eclipse.lyo.oslc4j.core.model.ServiceProvider;
 import org.eclipse.lyo.oslc4j.provider.jena.JenaProvidersRegistry;
 import org.eclipse.lyo.oslc4j.provider.json4j.Json4JProvidersRegistry;
 
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 import PapyrusCommon.PapyrusCommon.resources.Resource;
 
  
@@ -222,8 +222,8 @@ public class Retriever {
     private String getQueryBase(final String registryUri)
             throws ConsumerException {
         try {             
-            String domain = Constants.CHANGE_MANAGEMENT_DOMAIN;
-            String type = Constants.TYPE_RESOURCE;
+            String domain = PConstants.CHANGE_MANAGEMENT_DOMAIN;
+            String type = PConstants.TYPE_RESOURCE;
             
             final ServiceProvider[] serviceProviders = new ServiceProviderRegistryClient(providers, MEDIA_TYPE,
                     registryUri).getServiceProviders(); // (PROVIDERS, mediaType).getServiceProviders();
