@@ -4,7 +4,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcDescription;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcName;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcNamespace;
@@ -20,8 +20,8 @@ import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.Representation;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
-@OslcNamespace(Constants.PAPYRUS_NAMESPACE)
-@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = Constants.TYPE_DIAGRAMM)
+@OslcNamespace(PConstants.PAPYRUS_NAMESPACE)
+@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = PConstants.TYPE_DIAGRAMM)
 public class Diagramm extends AbstractResource {
 
 	private URI uri = null;
@@ -39,7 +39,7 @@ public class Diagramm extends AbstractResource {
 	}
 
 	@OslcDescription("A Diagramm name ")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "name")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "name")
 	 
 	@OslcTitle("Name")
 	public String getName() {
@@ -55,7 +55,7 @@ public class Diagramm extends AbstractResource {
     @OslcPropertyDefinition(OslcConstants.DCTERMS_NAMESPACE + "attributs")
     @OslcRepresentation(Representation.Inline)     
     @OslcValueType(ValueType.LocalResource)
-    @OslcRange(Constants.TYPE_ATTRIBUT)
+    @OslcRange(PConstants.TYPE_ATTRIBUT)
     @OslcTitle("attributs")
 	public List<Attribut> getAttributs() {
 		return attributs;
@@ -70,7 +70,7 @@ public class Diagramm extends AbstractResource {
 	}
 	@OslcDescription("Type")
 	@OslcName("type")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "type")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "type")
 	 
 	@OslcTitle("Type")
 	public String getType() {

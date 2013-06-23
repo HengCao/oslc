@@ -1,9 +1,8 @@
 package PapyrusCommon.PapyrusCommon;
 
 
-
 // CHECKSTYLE:OFF
-public interface Constants {
+public interface PConstants {
     // CHECKSTYLE:ON
 
     /**
@@ -24,7 +23,7 @@ public interface Constants {
     /**
      * URL of friend of a friend (FOAF) namespace.
      */
-    String PAPYRUS_NAMESPACE = "http://xmlns.com/foaf/0.1/";
+    String PAPYRUS_NAMESPACE = "http://papyrusnamespace/";
 
     /**
      * Prefix for friend of a friend (FOAF) domain.

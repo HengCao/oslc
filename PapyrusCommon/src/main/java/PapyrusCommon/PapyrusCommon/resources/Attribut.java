@@ -4,7 +4,9 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
+
+import org.eclipse.lyo.oslc4j.changemanagement.Constants;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcDescription;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcName;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcNamespace;
@@ -20,8 +22,8 @@ import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.Representation;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
-@OslcNamespace(Constants.PAPYRUS_NAMESPACE)
-@OslcResourceShape(title = "FOAF Attributs Resource Shape", describes = Constants.TYPE_ATTRIBUT)
+@OslcNamespace(PConstants.PAPYRUS_NAMESPACE)
+@OslcResourceShape(title = "FOAF Attributs Resource Shape", describes = PConstants.TYPE_ATTRIBUT)
 public class Attribut {
 
 	private String name;
@@ -29,7 +31,7 @@ public class Attribut {
 	
     private List<URI> validatedBy = new ArrayList<URI>();
 	@OslcDescription("A FOAF name ")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "name")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "name")
 	@OslcTitle("Name")
 	public String getName() {
 		return name;
@@ -41,7 +43,7 @@ public class Attribut {
 	}
 
 	@OslcDescription("Type for Attributt ")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "type")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "type")
  
 	@OslcTitle("Type")
 	public String getType() {
@@ -54,7 +56,7 @@ public class Attribut {
 
 	@OslcDescription("Validation  of Attribut ")
     @OslcName("validatedby")
-    @OslcPropertyDefinition(OslcConstants.DCTERMS_NAMESPACE + "validatedby")
+    @OslcPropertyDefinition(Constants.QUALITY_MANAGEMENT_NAMESPACE + "validatedby")
     @OslcRepresentation(Representation.Reference)   
     
     

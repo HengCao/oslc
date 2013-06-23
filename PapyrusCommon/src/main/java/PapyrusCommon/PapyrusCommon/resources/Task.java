@@ -3,7 +3,7 @@ package PapyrusCommon.PapyrusCommon.resources;
 import org.eclipse.lyo.oslc4j.core.model.AbstractResource;
 import java.net.URI;
 import java.util.Set;
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcDescription;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcNamespace;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcPropertyDefinition;
@@ -12,8 +12,8 @@ import org.eclipse.lyo.oslc4j.core.annotation.OslcResourceShape;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcTitle;
 import org.eclipse.lyo.oslc4j.core.model.AbstractResource;
 
-@OslcNamespace(Constants.PAPYRUS_NAMESPACE)
-@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = Constants.TYPE_DIAGRAMM)
+@OslcNamespace(PConstants.PAPYRUS_NAMESPACE)
+@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = PConstants.TYPE_DIAGRAMM)
 public class Task extends AbstractResource {
 	/**
 	 * Bezeichnung des Tasks
@@ -27,7 +27,7 @@ public class Task extends AbstractResource {
 
 	private URI uri = null;
 	@OslcDescription("A Task name ")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "name")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "name")
  
 	@OslcTitle("Task ")
 	public String getName() {

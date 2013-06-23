@@ -24,10 +24,10 @@ import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.Representation;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 
-@OslcNamespace(Constants.PAPYRUS_NAMESPACE)
-@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = Constants.TYPE_MODELL)
+@OslcNamespace(PConstants.PAPYRUS_NAMESPACE)
+@OslcResourceShape(title = "FOAF Diagramm Resource Shape", describes = PConstants.TYPE_MODELL)
 public class Modell extends AbstractResource {
 
 	private List<Diagramm> diagramms = new ArrayList<Diagramm>();
@@ -40,10 +40,10 @@ public class Modell extends AbstractResource {
 
 	@OslcDescription("Diagramms from Papyrus ")
 	@OslcName("diagramm")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "diagramm")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "diagramm")
 	@OslcRepresentation(Representation.Inline)
 	@OslcValueType(ValueType.LocalResource)
-	@OslcRange(Constants.TYPE_DIAGRAMM)
+	@OslcRange(PConstants.TYPE_DIAGRAMM)
 	@OslcTitle("Diagramms")
 	public List<Diagramm> getDiagramms() {
 		return diagramms;
@@ -58,7 +58,7 @@ public class Modell extends AbstractResource {
 	}
 
 	@OslcDescription("createion Date")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "creationDate")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "creationDate")
 	@OslcReadOnly
 	@OslcTitle("Creation Date")
 	public Date getCreationDate() {
@@ -71,7 +71,7 @@ public class Modell extends AbstractResource {
 
 	@OslcDescription("Name")
 	@OslcName("name")
-	@OslcPropertyDefinition(Constants.PAPYRUS_NAMESPACE + "name")
+	@OslcPropertyDefinition(PConstants.PAPYRUS_NAMESPACE + "name")
 	 
 	@OslcTitle("Name")
 	public String getName() {

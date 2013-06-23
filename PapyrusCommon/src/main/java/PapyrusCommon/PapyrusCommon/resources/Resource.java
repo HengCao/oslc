@@ -4,7 +4,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.eclipse.lyo.oslc4j.changemanagement.Constants;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcDescription;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcName;
 import org.eclipse.lyo.oslc4j.core.annotation.OslcNamespace;
@@ -21,10 +21,10 @@ import org.eclipse.lyo.oslc4j.core.model.Occurs;
 import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.Representation;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
-import PapyrusCommon.PapyrusCommon.Constants;
+import PapyrusCommon.PapyrusCommon.PConstants;
 
-@OslcNamespace(Constants.CHANGE_MANAGEMENT_NAMESPACE)
-@OslcResourceShape(title = "Change Management Resource Resource Shape", describes = Constants.TYPE_RESOURCE)
+@OslcNamespace(PConstants.CHANGE_MANAGEMENT_NAMESPACE)
+@OslcResourceShape(title = "Change Management Resource Resource Shape", describes = PConstants.TYPE_RESOURCE)
 public class Resource extends AbstractResource {
 	
 //	  /**
@@ -191,7 +191,7 @@ public class Resource extends AbstractResource {
     
     @OslcDescription("Related Task created by gPM.")
     @OslcName("tasks")
-    @OslcPropertyDefinition(OslcConstants.DCTERMS_NAMESPACE + "tasks")
+    @OslcPropertyDefinition(Constants.CHANGE_MANAGEMENT_NAMESPACE + "tasks")
     @OslcRepresentation(Representation.Reference)
  //   @OslcValueType(ValueType.LocalResource)
  //   @OslcRange(Constants.TYPE_TASK)
@@ -225,7 +225,7 @@ public class Resource extends AbstractResource {
     @OslcPropertyDefinition(OslcConstants.DCTERMS_NAMESPACE + "modell")
     @OslcRepresentation(Representation.Inline)     
     @OslcValueType(ValueType.LocalResource)
-    @OslcRange(Constants.TYPE_ATTRIBUT)
+    @OslcRange(PConstants.TYPE_ATTRIBUT)
     @OslcTitle("Modells")
     public List<Modell> getModells (){
     	
